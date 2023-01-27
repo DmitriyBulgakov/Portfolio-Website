@@ -13,7 +13,7 @@
     width: 100%;
     height: 2px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: set-text-color($primary-color);
     @include easeOut;
   }
 
@@ -83,7 +83,7 @@
       height: 250px;
       background: $portrait;
       border-radius: 50%;
-      border: 3px solid $secondary-color;
+      border: solid 3px $secondary-color;
     }
     &.show {
       // Slide in from bottom
