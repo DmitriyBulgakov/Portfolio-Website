@@ -5,6 +5,7 @@ $secondary-color: rgb(241, 241, 20);
 $show-home-image: true;
 $home-image: url(/dist/img/background.jpg);
 $portrait: url(/dist/img/portrait.jpg);
+$portraitSm: url(/dist/img/portrait_small.jpg);
 $background-opacity: 0.7;
 
 // Variables ========================================
@@ -34,3 +35,26 @@ $background-opacity: 0.7;
 }
 
 // Mixin ========================================
+
+// Media Query Mixins ========================================
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+@mixin mediaMd {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin mediaLg {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
+}
+@mixin mediaXl {
+  @media screen and (min-width: 1171px) {
+    @content;
+  }
+}
+// Media Query Mixins ========================================
